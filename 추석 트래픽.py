@@ -1,3 +1,10 @@
+'''
+다음 3가지를 물어보는 것 같다.
+1. 문자열을 다룰줄 안다.
+2. 숫자를 변환할줄 안다.
+3. 범위를 지정할줄 안다.
+'''
+
 def data(lines, scope):
     arr = list(map(str, lines.split()))
     # print(arr)
