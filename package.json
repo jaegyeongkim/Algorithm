@@ -1,0 +1,7 @@
+{
+	"devDependencies": {
+		"eslint": "^9.34.0",
+		"@typescript-eslint/parser": "^8.40.0",
+		"@typescript-eslint/eslint-plugin": "^8.40.0"
+	}
+}
