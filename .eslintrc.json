@@ -10,6 +10,13 @@
       "error",
       { "allowExpressions": false }
     ],
-    "@typescript-eslint/explicit-module-boundary-types": "error"
+    "@typescript-eslint/explicit-module-boundary-types": "error",
+    "@typescript-eslint/typedef": [
+      "error",
+      {
+        "parameter": true,
+        "arrowParameter": true
+      }
+    ]
   }
 }
