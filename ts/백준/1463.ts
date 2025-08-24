@@ -1,3 +1,5 @@
+// LINK: https://www.acmicpc.net/problem/1463
+
 import * as fs from "fs";
 
 const input = Number(fs.readFileSync("/dev/stdin", "utf8").trim());

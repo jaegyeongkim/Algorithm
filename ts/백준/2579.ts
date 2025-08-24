@@ -1,3 +1,5 @@
+// LINK: https://www.acmicpc.net/problem/2579
+
 import * as fs from "fs";
 
 const input = fs
