@@ -1,0 +1,12 @@
+import * as fs from "fs";
+
+const input = fs.readFileSync(0, "utf8").trim().split(/\s+/).map(Number);
+
+const A = input[0];
+const B = input[1];
+const C = input[2];
+
+console.log((A + B) % C);
+console.log(((A % C) + (B % C)) % C);
+console.log((A * B) % C);
+console.log(((A % C) * (B % C)) % C);
