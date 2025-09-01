@@ -1,3 +1,5 @@
+// LINK: https://www.acmicpc.net/problem/1008
+
 import * as fs from "fs";
 
 const input = fs.readFileSync(0, "utf8").trim().split(/\s+/).map(Number);
