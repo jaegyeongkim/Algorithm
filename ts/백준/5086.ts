@@ -1,4 +1,4 @@
-// LINK: https://www.acmicpc.net/problem/2908
+// LINK: https://www.acmicpc.net/problem/5086
 
 import * as fs from "fs";
 
