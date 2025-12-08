@@ -35,10 +35,15 @@ const obj = {
   z: 26,
 };
 
+const MOD = 1234567891;
+
+let pow = 1;
 let result = 0;
+
 arr.split("").forEach((str, idx) => {
   const value = obj[str as keyof typeof obj];
-  result += value * Math.pow(31, idx);
+  result = (result + value * pow) % MOD;
+  pow = (pow * 31) % MOD;
 });
 
 console.log(result);
