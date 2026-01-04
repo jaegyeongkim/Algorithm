@@ -27,24 +27,24 @@ for (let t = 0; t < T; t++) {
         bugCount++;
         searched[x][y] = 1;
 
-        let bfs = [
+        let dfs = [
           [x + 1, y],
           [x - 1, y],
           [x, y + 1],
           [x, y - 1],
         ];
 
-        while (bfs.length) {
-          const [n, m] = bfs.pop() as number[];
+        while (dfs.length) {
+          const [n, m] = dfs.pop() as number[];
 
           if (m > M - 1 || m < 0 || n > N - 1 || n < 0) continue;
 
           if (map[n][m] === 1 && searched[n][m] === 0) {
             searched[n][m] = 1;
-            bfs.push([n + 1, m]);
-            bfs.push([n - 1, m]);
-            bfs.push([n, m + 1]);
-            bfs.push([n, m - 1]);
+            dfs.push([n + 1, m]);
+            dfs.push([n - 1, m]);
+            dfs.push([n, m + 1]);
+            dfs.push([n, m - 1]);
           }
         }
       }
