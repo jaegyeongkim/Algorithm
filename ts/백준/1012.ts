@@ -35,16 +35,16 @@ for (let t = 0; t < T; t++) {
         ];
 
         while (bfs.length) {
-          const [m, n] = bfs.pop() as number[];
+          const [n, m] = bfs.pop() as number[];
 
-          if (m > N || m < 0 || n > M || n < 0) continue;
+          if (m > M - 1 || m < 0 || n > N - 1 || n < 0) continue;
 
-          if (map[m][n] === 1 && searched[m][n] === 0) {
-            searched[m][n] = 1;
-            bfs.push([m + 1, n]);
-            bfs.push([m - 1, n]);
-            bfs.push([m, n + 1]);
-            bfs.push([m, n - 1]);
+          if (map[n][m] === 1 && searched[n][m] === 0) {
+            searched[n][m] = 1;
+            bfs.push([n + 1, m]);
+            bfs.push([n - 1, m]);
+            bfs.push([n, m + 1]);
+            bfs.push([n, m - 1]);
           }
         }
       }
