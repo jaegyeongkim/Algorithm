@@ -5,7 +5,7 @@ import * as fs from "fs";
 const input = fs.readFileSync(0, "utf8").trim().split("\n").map(Number);
 const arr = input.slice(1);
 
-const dp: Record<number, number[]> = { 0: [1, 0], 1: [0, 1], 2: [1, 1] };
+const dp: Record<number, number[]> = { 0: [1, 0], 1: [0, 1] };
 
 const maxNum = Math.max(...arr);
 
